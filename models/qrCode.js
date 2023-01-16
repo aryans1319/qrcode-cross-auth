@@ -4,7 +4,7 @@ const qrCodeSchema = mongoose.Schema({
     userID: {
         type: mongoose.Schema.Types.ObjectId,
         require: true,
-        ref: "Users",
+        ref: "User",
     },
     connectedDeviceID: {
         type: mongoose.Schema.Types.ObjectId,
@@ -12,7 +12,7 @@ const qrCodeSchema = mongoose.Schema({
     },
     lastUsedDate: {
         type: Date,
-        default: null
+        default: null,
     },
     isActiveNow: {  
         type: Boolean, 
